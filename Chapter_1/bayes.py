@@ -106,7 +106,7 @@ class Search():
             x = self.sailor_actual[0] + SA3_CORNERS[0]
             y = self.sailor_actual[1] + SA3_CORNERS[1]
             self.area_actual = 3
-        return x, y
+        return int(x), int(y)
 
     def calc_search_effectiveness(self):
         """Set decimal search effectiveness value per search area."""
